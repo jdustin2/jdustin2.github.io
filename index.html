@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 - Hello</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <div class="container-fluid">
+        <div class="navbar-nav mx-auto">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#workhistory">Work History</a>
+            <a class="nav-link" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div id="about" class="sections">
+        <h1 class="sectionTitles">About Me</h1>
+        <img
+        class="profile"
+        src="images\profile.jpg"
+        alt="Picture of my girlfriend and I before a party"
+      />
+      <div class="text-sections">
+        <p>
+        Hi, my name is Dustin Johnson and I am currently a senior computer science student at Portland State University.
+        I am set to graduate during the winter term of 2022/2023. 
+      </p>
+    </div>
+      
+      </div>
+      <div id="projects" class="sections">
+        <h1 class="sectionTitles">Projects</h1>
+      </div>
+      <div id="workhistory" class="sections">
+        <h1 class="sectionTitles">Work History</h1>
+        <img style="width:400px; height:200px" src="images/cognex.png">
+        <div class="text-sections">
+            <p>
+                Started: 3/28/2022
+            </p>
+            <p>
+                Expected End Date: 12/20/2022
+            </p>
+            <p>
+                I currently work at Cognex Corporation as a software intern working on a web application
+                that will enable devlopers to quickly reconfigure cameras for testing and debugging purposes.
+                I work on a full stack application using Angular and Microsofts .NET Core. I was originally hired
+                as part of the MECOP internship process, but had my internship extended past the original six months.
+            </p>
+        </div>
+        
+      </div>
+      <div id="contact" class="sections">
+        <h1 class="sectionTitles">Contact Me</h1>
+        <form class="form container-flex m-auto border rounded bg-light p-3">
+  
+              <div class="form-group mb-3">
+                <label class="col-sm-3 form-label" for="email">Your Email:</label>
+                <div class="">
+                  <input class="form-control" type="text" name="email" id="email"/>
+                </div>
+              </div>
+
+              <div class=" form-group mb-3">
+                <label class=" form-label" name="date" for="date">
+                    Message:</label>
+                <div class="">
+                  <textarea class="form-control" type="text" value="mm/dd/yyyy" id="date"></textarea>
+                </div>
+                
+              </div>
+  
+              <div class="text-center">
+                <button class="btn btn-primary" name="Submit" type="submit">Submit</button>
+                <button class="btn btn-secondary" name="Reset" type="reset">Reset</button>
+              </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
