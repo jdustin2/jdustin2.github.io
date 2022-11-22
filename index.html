@@ -82,20 +82,24 @@
       </div>
       <div id="contact" class="sections">
         <h1 class="sectionTitles">Contact Me</h1>
-        <form action="mailto:dustincj@gmail.com" method="post" enctype="text/plain" class="form container-flex m-auto border rounded bg-light p-3">
+        <form 
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeXA49Rj7jSOxzHcAN8QAzXc1pF3GgHGDf4KkoAzosDc0yZAA/formResponse"
+        target="hidden_iframe"
+        onsubmit="submitted=true;" 
+        class="form container-flex m-auto border rounded bg-light p-3">
   
               <div class="form-group mb-3">
-                <label class="col-sm-3 form-label" for="email">Your Email:</label>
+                <label class="col-sm-3 form-label" for="entry.1045781291">Your Email:</label>
                 <div class="">
-                  <input class="form-control" type="text" name="email" id="email"/>
+                  <input class="form-control" type="text" name="entry.1045781291" id="entry.1045781291"/>
                 </div>
               </div>
 
               <div class=" form-group mb-3">
-                <label class=" form-label" name="message" for="message">
+                <label class=" form-label" name="message" for="entry.839337160">
                     Message:</label>
                 <div class="">
-                  <textarea class="form-control" type="text" value="" id="message"></textarea>
+                  <textarea class="form-control" name="entry.839337160" type="text" value="" id="entry.839337160"></textarea>
                 </div>
                 
               </div>
@@ -105,7 +109,12 @@
                 <button class="btn btn-secondary" name="Reset" type="reset">Reset</button>
               </div>
         </form>
-      </div>
+        <iframe
+              name="hidden_iframe"
+              id="hidden_iframe"
+              style="display: none"
+            ></iframe>
+        
     </main>
   </body>
 </html>
