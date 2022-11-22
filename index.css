@@ -4,8 +4,8 @@
 .profile {
     text-align: center;
     border-radius:10%;
-    width: 250px;
-    height: 300px;
+    width: 500px;
+    height: 650px;
 }
 
 .container {
@@ -15,7 +15,6 @@ padding-left: 100px;
 }
   
 main{
-margin-top: 5%;
 text-align: center;
 margin-left:25%;
 margin-right: 25%;
@@ -26,11 +25,6 @@ margin-right: 25%;
 }
 .sections{
     padding:50px;
-    /* border-width:1px;
-    border-style:solid;
-    border-color:gray;
-    border-radius: 10%;
-    margin: 10px; */
 }
 
 .text-sections
@@ -38,3 +32,15 @@ margin-right: 25%;
     margin: 25px;
     padding:25px;
 }
+
+
+@media (max-width: 768px) {
+    main{
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .profile {
+        width: 250px;
+        height: 325px;
+    }
+  }
