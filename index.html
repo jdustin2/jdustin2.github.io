@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>01 - Hello</title>
+    <title>Dustin Johnson's Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="index.css" />
-
+    <script defer src="index.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-sm bg-light">
@@ -20,6 +20,20 @@
             <a class="nav-link" href="#projects">Projects</a>
             <a class="nav-link" href="#workhistory">Work History</a>
             <a class="nav-link" href="#contact">Contact Me</a>
+            <a class="nav-link" href="https://github.com/jdustin2" target="_blank"><img
+            src="./assets/github.png"
+            alt="github logo"
+            height="32px"
+            width="32px"/></a>
+            <a class="nav-link" href="https://www.linkedin.com/in/dustincojohnson/" target="_blank">
+            <img
+            src="./assets/linkedin.png"
+            alt="linkedin logo"
+            height="32px"
+            width="32px"/></a>
+            <a class="nav-link"href="./assets/Resume - Dustin Johnson.pdf" target="_blank">
+              View Resume
+            </a>
         </div>
       </div>
     </nav>
@@ -28,13 +42,18 @@
         <h1 class="sectionTitles">About Me</h1>
         <img
         class="profile"
-        src="images\profile.jpg"
+        src="assets\profile.jpg"
         alt="Picture of my girlfriend and I before a party"
       />
       <div class="text-sections">
         <p>
         Hi, my name is Dustin Johnson and I am currently a senior computer science student at Portland State University.
-        I am set to graduate during the winter term of 2022/2023. 
+        I am set to graduate during the winter term of 2022/2023.
+      </p>
+      <p>
+        I am an avid video game player, and have been since the age of 7 when I first played 
+        Pokemon FireRed on the Gameboy Advance. Since then I have moved from the Xbox 360 then to the Playstation 4
+        and now finally to the PC.
       </p>
     </div>
       
@@ -44,8 +63,8 @@
       </div>
       <div id="workhistory" class="sections">
         <h1 class="sectionTitles">Work History</h1>
-        <img style="width:400px; height:200px" src="images/cognex.png">
-        <div class="text-sections">
+        <img style="width:400px; height:200px" src="assets/cognex.png">
+        <div class="text-sections border rounded bg-light">
             <p>
                 Started: 3/28/2022
             </p>
@@ -63,7 +82,7 @@
       </div>
       <div id="contact" class="sections">
         <h1 class="sectionTitles">Contact Me</h1>
-        <form class="form container-flex m-auto border rounded bg-light p-3">
+        <form action="mailto:dustincj@gmail.com" method="post" enctype="text/plain" class="form container-flex m-auto border rounded bg-light p-3">
   
               <div class="form-group mb-3">
                 <label class="col-sm-3 form-label" for="email">Your Email:</label>
@@ -73,16 +92,16 @@
               </div>
 
               <div class=" form-group mb-3">
-                <label class=" form-label" name="date" for="date">
+                <label class=" form-label" name="message" for="message">
                     Message:</label>
                 <div class="">
-                  <textarea class="form-control" type="text" value="mm/dd/yyyy" id="date"></textarea>
+                  <textarea class="form-control" type="text" value="" id="message"></textarea>
                 </div>
                 
               </div>
   
               <div class="text-center">
-                <button class="btn btn-primary" name="Submit" type="submit">Submit</button>
+                <button class="btn btn-primary" name="Submit" id="submit" type="submit">Submit</button>
                 <button class="btn btn-secondary" name="Reset" type="reset">Reset</button>
               </div>
         </form>
